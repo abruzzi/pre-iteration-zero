@@ -1,3 +1,3 @@
 # 在迭代0之前
 
-This file serves as your book's preface, a great place to describe your book's content and ideas.
+一个项目，从开始有粗略的想法，到可以
