@@ -29,7 +29,7 @@
 
 Retro过程是，团队坐在一起，回顾上一个迭代（通常是两个星期）做过的事情，有哪些做的比较好，哪些有待改进，有哪些疑惑等等。Retro可以有很多的形式，比如简单的`Well/Less Well/Questions`，更聚焦在产生`Action`的海星式等等。
 
-![pens](/images/pens.png)
+![pens](/images/pens.jpg)
 
 通常的顺序是：
 
