@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [如何做引导](how-to-facilitate/README.md)
 * [用户研究](user-research/README.md)
-   * 用户研究的方法
+   * [用户研究的方法](user-research/yong_hu_yan_jiu_de_fang_fa.md)
 * 产品设计
 * 产品测试
 * 非功能需求
