@@ -1,11 +1,13 @@
 # Summary
 
 * [Introduction](README.md)
-* [如何做引导](how-to-facilitate/README.md)
 * [用户研究](user-research/README.md)
    * [用户研究的方法](user-research/yong_hu_yan_jiu_de_fang_fa.md)
 * 产品设计
 * 产品测试
+* [思维模式](mind-set/README.md)
+	* [思维转变](mind-set/be-a-good-developer.md)
+	* [如何做引导](mind-set/how-to-facilitate.md)
 * 非功能需求
 * 技术选型
 * [基础设施](infrastructure/README.md)
@@ -15,4 +17,3 @@
    * [服务器端应用的持续交付](project-practises/poor-man-ci-backend.md)
    * [客户端程序的的持续交付](project-practises/poor-man-ci-frontend.md)
    * [Web站点的响应速度](project-practises/web-performance-testing-in-ci.md)
-
