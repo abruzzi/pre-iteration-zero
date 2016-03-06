@@ -14,7 +14,7 @@
 
 除此之外，我们在过程中编写的脚本还可以用以本地构建，如果你的团队中正好已经有CI工具/CD工具，将这些脚本集成进去也是一件非常容易的事情。
 
-![heroku real time log](/images/2016/01/heroku-log-resized.png)
+![heroku real time log](images/heroku-log-resized.png)
 
 ## 背景知识
 
@@ -99,7 +99,7 @@ postgres://username:password@host:port/database
 
 然后我们需要在`Heroku`的配置界面中配置一些环境变量：
 
-![heroku env config](/images/2016/01/heroku-config-resized.png)
+![heroku env config](images/heroku-config-resized.png)
 
 这样，当应用部署到`Heroku`上之后，我们的应用就可以读到这些配置了（注意`application.yml`中的环境变量`JDBC_DATABASE_URL`）。
 
@@ -162,7 +162,7 @@ task stage {
 }
 ```
 
-![travis deploy](/images/2016/01/travis-deploy-resized.png)
+![travis deploy](images/travis-deploy-resized.png)
 
 这样，我们只需要在本地的一个提交，一切都会自动化起来：
 
@@ -232,7 +232,7 @@ do
 done
 ```
 
-![CI Monitor](/images/2016/01/ci-monitor-resized.png)
+![CI Monitor](images/ci-monitor-resized.png)
 
 ## 小结
 

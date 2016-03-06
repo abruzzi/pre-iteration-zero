@@ -16,7 +16,7 @@
 
 我们的应用最后看起来是这样子的。
 
-![bookmarks app](/images/2016/01/bookmarks-app-resized.png)
+![bookmarks app](images/bookmarks-app-resized.png)
 
 ## 技术选型
 
@@ -110,7 +110,7 @@ npm install
 gulp
 ```
 
-![Snap CI unit](/images/2016/01/snap-ci-unit-resized.png)
+![Snap CI unit](images/snap-ci-unit-resized.png)
 
 这样，每当我们有新的提交之后，`Snap CI`都会拿到新代码，并执行上述命令，如果执行成功，则本地构建成功。
 
@@ -167,7 +167,7 @@ describe 'Feeds List Page' do
 end
 ```
 
-![Snap CI logs](/images/2016/01/snap-ci-it-resized.png)
+![Snap CI logs](images/snap-ci-it-resized.png)
 
 ### 部署
 
@@ -175,7 +175,7 @@ end
 
 然后你需要将这个`bucket`设置成`public`，这样其他人才可以访问你的`bucket`。
 
-![AWS S3](/images/2016/01/aws-s3-public-resized.png)
+![AWS S3](images/aws-s3-public-resized.png)
 
 有了这个之后，我们来编写一个小脚本，这个脚本可以将本地的文件上传至S3。
 
@@ -204,7 +204,7 @@ AWS_SECRET_ACCESS_KEY=xxxxxxxxxx
 
 然后我们就可以将本地的`public`目录递归的上传到S3的对应目录了！
 
-![snap ci pipeline](/images/2016/01/snap-ci-pipeline-resized.png)
+![snap ci pipeline](images/snap-ci-pipeline-resized.png)
 
 完整的代码可以在[此处下载](https://github.com/abruzzi/bookmarks-frontend)。
 
