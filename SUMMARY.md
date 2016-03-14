@@ -8,6 +8,7 @@
 * [思维模式](mind-set/README.md)
 	* [思维转变](mind-set/be-a-good-developer.md)
 	* [如何做引导](mind-set/how-to-facilitate.md)
+   * [全局优化](mind-set/focus-on-the-whole.md)
 * 非功能需求
 * 技术选型
 * [基础设施](infrastructure/README.md)
