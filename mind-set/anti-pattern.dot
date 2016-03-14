@@ -1,0 +1,31 @@
+digraph {
+	fontname="Microsoft YaHei";
+    fontsize=10;
+
+    graph [dpi=180];
+
+    node [shape="record", color="#F88D19", fontname="Consolas", fontsize=10];
+    edge [color="#3C7CCC", fontname="Consolas", fontsize=10];
+
+	no_ci_failure [label="CI不许失败"];
+
+    interface_change [label="接口变更"];    
+    no_ci [label="不做持续集成"];
+
+    ci_failure_by_change [label="依赖方构建失败"];
+    no_deliver [label="无法按时交付"];
+
+    long_time_integrate [label="花费大量时间集成"];
+
+    edge [fontcolor="#00C3E0", fontsize=8];
+    interface_change -> ci_failure_by_change [label="依赖接口变更"];
+    
+    ci_failure_by_change -> no_deliver [label="打包任务失败"];
+
+    edge [color="#DC260A"];
+    no_deliver -> no_ci_failure [label="规则：不许有失败的CI"];
+    no_ci_failure -> no_ci [label="不持续集成"];
+
+    no_ci -> long_time_integrate [label="集成时间变长"];
+    long_time_integrate -> no_deliver;
+}
