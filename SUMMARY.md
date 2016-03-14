@@ -18,3 +18,5 @@
    * [服务器端应用的持续交付](project-practises/poor-man-ci-backend.md)
    * [客户端程序的的持续交付](project-practises/poor-man-ci-frontend.md)
    * [Web站点的响应测试](project-practises/web-performance-testing-in-ci.md)
+   * [配置与应用分离](project-practises/externalize-configuration.md)
+   * [推荐的工程实践](project-practises/practises.md)
