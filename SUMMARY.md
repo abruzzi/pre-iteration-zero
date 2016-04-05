@@ -21,3 +21,5 @@
    * [Web站点的响应测试](project-practises/web-performance-testing-in-ci.md)
    * [配置与应用分离](project-practises/externalize-configuration.md)
    * [推荐的工程实践](project-practises/practises.md)
+* [附录](appendix/README.md)
+   * [svn diff](appendix/svn-diff.md)

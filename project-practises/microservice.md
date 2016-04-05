@@ -8,7 +8,7 @@ $ gradle init --type=java-library
 ```
 
 ```sh
-➜  microservice-demo tree
+$ tree
 .
 ├── build.gradle
 ├── gradle
