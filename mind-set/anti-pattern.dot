@@ -4,8 +4,11 @@ digraph {
 
     graph [dpi=180];
 
-    node [shape="record", color="#F88D19", fontname="Consolas", fontsize=10];
-    edge [color="#3C7CCC", fontname="Consolas", fontsize=10];
+    style="filled"
+    color="#EBEBEB"
+
+    node [shape="record", color="#F88D19", fontname="Consolas", fontsize=10, style="filled", fontcolor="#ffffff"];
+    edge [color="#3C7CCC", fontname="Consolas", fontsize=10, arrowhead="empty", style="dashed"];
 
 	no_ci_failure [label="CI不许失败"];
 

@@ -8,11 +8,12 @@
 * [思维模式](mind-set/README.md)
 	* [思维转变](mind-set/be-a-good-developer.md)
 	* [如何做引导](mind-set/how-to-facilitate.md)
-    * [全局优化](mind-set/focus-on-the-whole.md)
-* 非功能需求
+   * [全局优化](mind-set/focus-on-the-whole.md)
+* [非功能需求](nfr/README.md)
 * 技术选型
 * [基础设施](infrastructure/README.md)
    * [环境自动化](infrastructure/provision.md)
+   * [容器技术](infrastructure/container.md)
 * [可演化的软件架构](architecture/README.md)
    * [软件开发方法论](architecture/methodology.md)
 * [工程实践](project-practises/README.md)
@@ -21,5 +22,7 @@
    * [Web站点的响应测试](project-practises/web-performance-testing-in-ci.md)
    * [配置与应用分离](project-practises/externalize-configuration.md)
    * [推荐的工程实践](project-practises/practises.md)
+* [测试策略](testing/README.md)
+   * [前后端分离](testing/frontend-backend-separation.md)
 * [附录](appendix/README.md)
    * [svn diff](appendix/svn-diff.md)

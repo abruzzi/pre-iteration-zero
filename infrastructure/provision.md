@@ -353,9 +353,4 @@ end
 end
 ```
 
-## Docker
-
-### docker-machine
-
-### docker-compose
 
