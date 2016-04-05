@@ -100,6 +100,78 @@ end
 
 ## Ansible
 
+Ansible是一个自动化配置工具，相对于`Chef`，`Puppet`，它的安装和配置更加简单（无需在被配置的服务器安装额外的Agent程序）。它通过`ssh`将一些Ansible模块部署到远程机器上，然后执行。
+
+使用`Ansible`可以同时配置，更新多个机器。目前很多企业都会使用各种各样的云产品，比如AWS的EC2，阿里云等，通过`Ansible`可以很容易的将这些环境配置变成自动化。在企业内部的私有云（从一台服务器划分出来的众多虚拟机）中，也可以使用`Ansible`来减少配置环境的时间，提高效率。
+
+在一个冬日的下午，我和一个新手程序员结对在服务器上修改`tomcat`服务器的一些日志的配置，折腾了很久之后，我放弃了。我心想，要不删了`webapps`这个目录重新部署一下看看吧，可能是缓存问题也说不定。不过，头昏脑涨的我并没有发现敲入的命令是`rm -rf /usr/share/tomcat7`。新手程序员问我，`rm -rf`是什么意思？我一边用力的敲下回车键，一遍警告这个新手：“rm -rf是一个非常危险的操作，它表示要强力删除整个……”。等我发现我删除的是`tomcat7`的时候已经太晚了，我们的QA环境彻底挂了，所有人都被block住了（还好不是在其他人给客户showcase的时候）。
+
+另一个工程师，我们姑且称之为`运维工程师`吧，花费了好几个小时来重新安装`tomcat`，以及其中的各种`jvm`参数。
+
+我们在随后的几周里，引入了`Ansible`，这样即使头昏脑涨的程序员无意识的敲入了愚蠢而致命的命令也无所谓，我们只需要2分钟就可以配置好一个`tomcat`服务器，崭新的。
+
+### 惯例
+
+`Ansible`中的一些关键概念：
+
+1.  role 定义一个角色，比如nginx就可以是一个角色，要完成nginx的安装需要很多小的步骤，这些步骤都包含在nginx这个role中
+1.  inventory 定义一组环境，比如Web服务器需要三台做负载均衡，数据库由两台服务器组成等，这些都可以通过inventory文件来描述，inventory文件被称为清单文件
+1.  playbook 定义在哪些inventory应用哪些role
+
+`Ansible`中有一些惯例，遵循这些惯例有助于你快速读懂其他人写的`playbook`/`role`。
+
+```yml
+production                # 生产环境的清单文件
+staging                   # staging环境的清单文件
+qa                        # 测试环境的清单文件
+
+site.yml                  # 主playbook
+webservers.yml            # web服务器的playbook
+dbservers.yml             # 数据库服务器的playbook
+
+roles/
+    common/               # this hierarchy represents a "role"
+        tasks/            #
+            main.yml      # 具体任务定义
+        handlers/         #
+            main.yml      # 回调任务
+        templates/        #  
+            nginx.conf.j2 # 模板文件
+        files/            #
+            app.conf      # 需要拷贝到被配置环境中的文件 
+        vars/             #
+            main.yml      # 变量定义
+        defaults/         #
+            main.yml      # 低优先级变量定义
+        meta/             #
+            main.yml      # 元数据，用以表述作者信息，定义依赖等
+
+    webtier/              # 另外一个role，结构和`common`一致
+    monitoring/           # 用于监控的role，结构同上
+```
+
+比如一个简单的`inventory`文件看起来是这样的：
+
+```yml
+[webservers]
+10.29.2.1
+10.29.2.2
+10.29.2.3
+
+[dbservers]
+10.29.2.4
+10.29.2.5
+```
+
+没错，它就是一个简单的ini文件。如果你需要添加新的机器，只需要将域名/IP地址添加到对应的小节即可。
+
+
+### 命令
+
+### 在Vagrant中使用
+
+### 独立使用
+
 ## Docker
 
 ### docker-machine
