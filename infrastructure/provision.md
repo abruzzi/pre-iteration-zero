@@ -165,8 +165,109 @@ roles/
 
 没错，它就是一个简单的ini文件。如果你需要添加新的机器，只需要将域名/IP地址添加到对应的小节即可。
 
+`Ansible`使用yml作为配置，我们来看一个playbook的例子:
+
+```yml
+-   name: webservers
+    hosts: webservers
+    roles:
+        - roles/nginx
+    user: robot
+    sudo: true
+
+-   name: dbservers
+    hosts: dbservers
+    roles:
+        - roles/mongodb 
+    user: robot
+    sudo: true
+    environment:
+        http_proxy: http://user:pass@proxy.host:8080
+        https_proxy: http://user:pass@proxy.host:8080
+```
+
+这个playbook定义了两个环境的配置信息：`webservers`和`dbservers`。`webservers`中的所有主机会被应用`nginx`角色（安装和配置nginx，并启动nginx服务），而`dbservers`中的主机会被应用`mongodb`的角色。
+
+在`dbservers`中，我们还加入了`environment`节，其中定义了可以用在安装过程中的一些环境变量设置。
+
+定义好之后，你可以通过下列命令来执行这个`playbook`：
+```sh
+ansible-playbook -i qa playbook.yml
+```
 
 ### 命令
+
+`Ansible`内置了很多常用的命令来简化配置的工作，比如安装软件包，拷贝文件，使用模板，创建用户，创建目录等。
+
+#### 安装软件包
+
+```yml
+- name: install package
+  apt: name=nginx state=present
+```
+
+`apt`命令可以用于安装一个软件包，它相当于在主机上执行`apt-get install nginx -y`。如果你需要安装多个软件包，可以采用`with_items`子命令：
+
+
+```yml
+- name: install packages
+  apt: name={{ item }} state=present
+  with_items: 
+  	-  nginx
+  	-  python
+  	-  git
+```
+
+#### 创建目录
+
+```yml
+- name: create directory
+  file: path=/home/vagrant/workers state=directory
+```
+
+#### 拷贝文件
+
+```yml
+- name: copy file to workers folder
+  copy: src=resource.zip dest=/home/vagrant/resource.zip
+```
+
+如果你要使用的命令，正好`Ansible`没有内置，你还可以使用`command`命令来执行：
+
+```yml
+- name: universal command
+  command: ls -alt /home/vagrant
+```
+
+如果要完成`Vagrant`小节中的例子，我们的配置看起来就是这样的：
+
+```yml
+- name: create directory
+  file: path=/home/vagrant/workers state=directory
+
+- name: install package
+  apt: name=wget state=present
+
+- name: download file
+  command: wget http://host:port/resource.zip -O ~/workers/resource.zip
+```
+
+当然，根据预定，我们会把变量放在`vars`目录的`main.yml`中，比如上面`apt`例子中的多个包的安装，我们会在`vars/main.yml`中定义变量
+
+```yml
+packages:
+  	-  nginx
+  	-  python
+  	-  git  
+```
+
+然后在`tasks/main.yml`中引用：
+
+```yml
+- name: install packages
+  apt: name={{ item }} state=present
+  with_items: '{{ packages }}'
+```
 
 ### 在Vagrant中使用
 
