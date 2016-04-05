@@ -269,9 +269,89 @@ packages:
   with_items: '{{ packages }}'
 ```
 
+### 独立使用
+
+通常我们会在一个Linux环境安装`Ansible`，这个环境专门做环境初始化的工作。如果你使用ubuntu环境，可以通过预编译的二进制包来安装：
+
+```sh
+$ sudo apt-get install software-properties-common
+$ sudo apt-add-repository ppa:ansible/ansible
+$ sudo apt-get update
+$ sudo apt-get install ansible
+```
+
+当然，你也可以通过源码来安装：
+
+```sh
+$ git clone git://github.com/ansible/ansible.git --recursive
+$ cd ./ansible
+$ source ./hacking/env-setup
+$ sudo make install #安装到系统路径，其他用户也可以使用
+```
+
+安装完成之后，你会得到`ansible`命令和`ansible-playbook`命令。
+
+在执行`ansible`命令之前，我们需要定义`ansible`对应的远程机器列表配置。你需要在`/etc/ansible/hosts`文件中添加所有需要配置的机器IP地址或者域名（如果没有这个目录和文件，可以直接创建）。
+
+文件内容就是每个地址一行的形式：
+
+```
+10.29.2.1
+10.29.2.2
+10.29.2.3
+```
+
+`ansible`命令可以用来向inventory执行shell命令，比如：
+
+```sh
+$ ansible all -m ping -u robot -b --become-user root
+```
+
+上面的命令会向主机`all`（`/etc/ansible/hosts`文件中指定的所有地址），执行一个`Ansible`模块`ping`（-m ping），使用用户`robot`（-u robot），并且以另一个用户身份`root`（-b --become-user root）。
+
+如果没有设置过`ssh`的私钥，还需要指定`--ask-pass`选项，否则`ansible`会尝试用ssh登陆，然后失败。
+
+```sh
+$ ansible all -m ping -u robot -b --become-user root --ask-pass
+```
+
+除了使用内置模块之外，你开可以使用其他任何shell命令：
+
+```sh
+$ ansible all -a "/bin/echo hello" -u robot --ask-pass
+```
+
+`Ansible`会直接在远程机器上执行对应的shell命令。
+
 ### 在Vagrant中使用
 
-### 独立使用
+`Vagrant`可以很容易的和`Ansible`集成在一起，只需要指定`config.vm.provision`为`ansible`即可：
+
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.provision :ansible do |ansible|
+    ansible.playbook = "playbook.yml"
+  end
+end
+```
+
+当然，你可以定义多个虚拟机，然后并发的来自动化配置，比如像这样：
+
+```ruby
+(1..5).each do |machine_id|
+  config.vm.define "machine#{machine_id}" do |machine|
+    machine.vm.hostname = "machine#{machine_id}"
+    machine.vm.network "private_network", ip: "192.168.2.#{20+machine_id}"
+
+    if machine_id == N
+      machine.vm.provision :ansible do |ansible|
+        ansible.limit = "all"
+        ansible.playbook = "playbook.yml"
+      end
+    end
+  end
+end
+```
 
 ## Docker
 
