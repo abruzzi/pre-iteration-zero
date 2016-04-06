@@ -1,0 +1,24 @@
+digraph {
+	fontname="Microsoft YaHei";
+    fontsize=10;
+
+    graph [dpi=180];
+
+    node [shape="record", color="#263238", fontname="Consolas", fontsize=10];
+    edge [color="#3C7CCC", fontname="Consolas", fontsize=10];
+
+    label="DOCKER_HOST/Linux"
+    bgcolor="#ADE5F9";
+    
+    docker_client [label="Docker Client", style="filled", color="#263238", fontcolor="#ffffff"];
+    docker_daemon [label="Docker Daemon", style="filled", color="#263238", fontcolor="#ffffff"];
+
+    container_1 [label="Container", shape="box3d"];
+    container_2 [label="Container", shape="box3d"];
+    container_3 [label="Container", shape="box3d"];
+
+    docker_client -> docker_daemon;
+    docker_daemon -> container_1;
+    docker_daemon -> container_2;
+    docker_daemon -> container_3;
+}
