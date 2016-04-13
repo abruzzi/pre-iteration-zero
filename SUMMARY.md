@@ -3,8 +3,8 @@
 * [前言](README.md)
 * [用户研究](user-research/README.md)
    * [用户研究的方法](user-research/yong_hu_yan_jiu_de_fang_fa.md)
-* [产品设计](persona)
 * [用户画像](user-research/yong_hu_hua_xiang.md)
+* [产品设计](persona)
 * 产品测试
 * [思维模式](mind-set/README.md)
    * [思维转变](mind-set/be-a-good-developer.md)
