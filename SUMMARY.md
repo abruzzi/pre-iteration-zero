@@ -3,17 +3,17 @@
 * [前言](README.md)
 * [用户研究](user-research/README.md)
    * [用户研究的方法](user-research/yong_hu_yan_jiu_de_fang_fa.md)
-* 产品设计
+* [产品设计](persona)
 * 产品测试
 * [思维模式](mind-set/README.md)
-	* [思维转变](mind-set/be-a-good-developer.md)
-	* [如何做引导](mind-set/how-to-facilitate.md)
-   * [全局优化](mind-set/focus-on-the-whole.md)
+   * [思维转变](mind-set/be-a-good-developer.md)
+   * [如何做引导](mind-set/how-to-facilitate.md)
+       * [全局优化](mind-set/focus-on-the-whole.md)
 * [基础设施](infrastructure/README.md)
    * [环境自动化](infrastructure/provision.md)
    * [容器技术](infrastructure/container.md)
 * [非功能需求](nfr/README.md)
-   * [系统监控](nfr/monitoring.md)   
+   * [系统监控](nfr/monitoring.md)
 * 技术选型
 * [可演化的软件架构](architecture/README.md)
    * [软件开发方法论](architecture/methodology.md)
@@ -27,3 +27,4 @@
    * [前后端分离](testing/frontend-backend-separation.md)
 * [附录](appendix/README.md)
    * [打造一个更友好的svn diff](appendix/svn-diff.md)
+
