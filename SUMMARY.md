@@ -28,5 +28,5 @@
 * [测试策略](testing/README.md)
    * [前后端分离](testing/frontend-backend-separation.md)
 * [附录](appendix/README.md)
-   * [打造一个更友好的svn diff](appendix/svn-diff.md)
+   * [Code Diff的工具](appendix/svn-diff.md)
 
