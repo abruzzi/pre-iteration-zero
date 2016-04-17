@@ -16,7 +16,8 @@
    * [容器技术](infrastructure/container.md)
 * [非功能需求](nfr/README.md)
    * [系统监控](nfr/monitoring.md)
-* 技术选型
+* [技术选型](teck-stack/README.md)
+   * [技术选型矩阵](tech-stack/details.md)
 * [可演化的软件架构](architecture/README.md)
    * [软件开发方法论](architecture/methodology.md)
 * [工程实践](project-practises/README.md)
