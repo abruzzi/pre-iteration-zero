@@ -1,8 +1,7 @@
-# 目录
+# Summary
 
 * [前言](README.md)
 * [用户研究](user-research/README.md)
-   * [用户研究的方法](user-research/yong_hu_yan_jiu_de_fang_fa.md)
    * [用户画像](user-research/yong_hu_hua_xiang.md)
    * [信息架构](user-research/xin_xi_jia_gou.md)
 * [产品设计](product-design/README.md)
