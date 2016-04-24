@@ -4,6 +4,7 @@
 * [用户研究](user-research/README.md)
    * [用户画像](user-research/yong_hu_hua_xiang.md)
    * [信息架构](user-research/xin_xi_jia_gou.md)
+   * 用户研究的方法
 * [产品设计](product-design/README.md)
 * [产品测试](product-testing/README.md)
 * [思维模式](mind-set/README.md)
