@@ -8,6 +8,7 @@
    * 用户访谈
    * 问卷调研
    * [用户研究的方法](user-research/yong_hu_yan_jiu_de_fang_fa.md)
+   * 用研产出物在设计中的作用
 * [产品设计](product-design/README.md)
 * [产品测试](product-testing/README.md)
 * [思维模式](mind-set/README.md)
