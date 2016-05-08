@@ -3,7 +3,7 @@
 * [前言](README.md)
 * [用户研究](user-research/README.md)
    * [用户研究之前应该知道的事](user-research/yong_hu_yan_jiu_zhi_qian_ying_gai_zhi_dao_de_shi.md)
-   * 竞品分析
+   * [竞品分析](user-research/jing_pin_fen_xi.md)
    * 数据分析
    * 用户访谈
    * 问卷调研
