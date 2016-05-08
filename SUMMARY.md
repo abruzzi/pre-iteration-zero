@@ -15,7 +15,7 @@
    * 交互原型
    * 视觉设计
    * 从设计到开发
-* [产品测试](product-testing/README.md)
+* [测试](product-testing/README.md)
    * 产品测试的目的和方法
 * [思维模式](mind-set/README.md)
    * [思维转变](mind-set/be-a-good-developer.md)
