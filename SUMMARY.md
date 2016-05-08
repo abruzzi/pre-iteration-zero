@@ -8,7 +8,6 @@
    * 用户访谈
    * 问卷调研
    * 用研产出物在设计中的作用
-   * [用户研究的方法](user-research/yong_hu_yan_jiu_de_fang_fa.md)
 * [设计](product-design/README.md)
    * 创意的产生和收敛
    * 快速原型
