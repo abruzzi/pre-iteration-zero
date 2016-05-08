@@ -11,6 +11,7 @@
    * [用户研究的方法](user-research/yong_hu_yan_jiu_de_fang_fa.md)
 * [设计](product-design/README.md)
    * 创意的产生和收敛
+   * 快速原型
 * [产品测试](product-testing/README.md)
 * [思维模式](mind-set/README.md)
    * [思维转变](mind-set/be-a-good-developer.md)
