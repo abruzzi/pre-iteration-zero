@@ -1,7 +1,6 @@
 # Summary
 
 * [前言](README.md)
-* 产品中的设计
 * [用户研究](user-research/README.md)
    * [用户研究之前应该知道的事](user-research/yong_hu_yan_jiu_zhi_qian_ying_gai_zhi_dao_de_shi.md)
    * 竞品分析
