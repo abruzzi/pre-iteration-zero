@@ -4,13 +4,13 @@
 * [用户研究](user-research/README.md)
    * [用户研究之前应该知道的事](user-research/yong_hu_yan_jiu_zhi_qian_ying_gai_zhi_dao_de_shi.md)
    * [竞品分析-产品战略](user-research/jing_pin_fen_xi.md)
+   * 竞品分析-设计
    * 数据分析
    * 用户访谈
    * 问卷调研
    * 用户画像&体验地图
    * 商业画布
    * 用研产出物在设计中的作用
-   * 竞品分析-设计
 * [设计](product-design/README.md)
    * 创意的产生和收敛
    * 快速原型
