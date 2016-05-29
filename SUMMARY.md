@@ -8,10 +8,10 @@
    * 数据分析
    * [用户访谈](user-research/yong_hu_fang_tan.md)
    * 问卷调研
+   * 体验地图
    * [用户画像](user-research/yong_hu_hua_50cf26_ti_yan_di_tu.md)
    * 商业画布
    * 用研产出物在设计中的作用
-   * 体验地图
 * [设计](product-design/README.md)
    * 创意的产生和收敛
    * 快速原型
