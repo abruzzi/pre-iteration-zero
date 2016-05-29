@@ -15,10 +15,10 @@
 * [设计](product-design/README.md)
    * 创意的产生和收敛
    * 快速原型
+   * 信息架构
    * 交互原型
    * 视觉设计
    * 从设计到开发
-   * 信息架构
 * [测试](product-testing/README.md)
    * 产品测试的目的和方法
 * [思维模式](mind-set/README.md)
