@@ -9,7 +9,7 @@
    * [用户访谈](user-research/yong_hu_fang_tan.md)
    * 问卷调研
    * [用户画像](user-research/yong_hu_hua_50cf26_ti_yan_di_tu.md)
-   * 体验地图
+   * [体验地图](user-research/ti_yan_di_tu.md)
    * 商业画布
    * 用研产出物在设计中的作用
 * [设计](product-design/README.md)
