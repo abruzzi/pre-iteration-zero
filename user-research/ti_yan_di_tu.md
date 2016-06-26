@@ -166,11 +166,12 @@
 
 ####工具网站推荐
 最后，给大家推荐一些能快速输出用户体验地图的工具网站：
-https://www.smaply.com/
-https://uxpressia.com/
-https://maps.touchpointdashboard.com
+
+* https://www.smaply.com/
+* https://uxpressia.com/
+*   https://maps.touchpointdashboard.com
 
 一个查看各类map的网站：
-https://www.blankcanvas.io/
+* https://www.blankcanvas.io/
 
 
