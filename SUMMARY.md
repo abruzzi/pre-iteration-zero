@@ -2,46 +2,46 @@
 
 * [前言](README.md)
 * [用户研究](user-research/README.md)
-   * [用户研究之前应该知道的事](user-research/yong_hu_yan_jiu_zhi_qian_ying_gai_zhi_dao_de_shi.md)
-   * [竞品分析-产品](user-research/jing_pin_fen_xi.md)
-   * 竞品分析-设计
-   * 数据分析
-   * [用户访谈](user-research/yong_hu_fang_tan.md)
-   * 问卷调研
-   * [用户画像](user-research/yong_hu_hua_50cf26_ti_yan_di_tu.md)
-   * [体验地图](user-research/ti_yan_di_tu.md)
-   * 商业画布
-   * 用研产出物在设计中的作用
+    * [用户研究之前应该知道的事](user-research/yong_hu_yan_jiu_zhi_qian_ying_gai_zhi_dao_de_shi.md)
+    * [竞品分析-产品](user-research/jing_pin_fen_xi.md)
+    * [竞品分析-设计](user-research/竞品分析-设计.md)
+    * [数据分析](user-research/数据分析.md)
+    * [用户访谈](user-research/yong_hu_fang_tan.md)
+    * [问卷调研](user-research/问卷调研.md)
+    * [用户画像](user-research/yong_hu_hua_50cf26_ti_yan_di_tu.md)
+    * [体验地图](user-research/ti_yan_di_tu.md)
+    * 商业画布
+    * 用研产出物在设计中的作用
 * [设计](product-design/README.md)
-   * 创意的产生和收敛
-   * 信息架构
-   * 快速原型
-   * 交互原型
-   * 视觉设计
-   * 从设计到开发
+    * 创意的产生和收敛
+    * 信息架构
+    * 快速原型
+    * 交互原型
+    * 视觉设计
+    * 从设计到开发
 * [测试](product-testing/README.md)
-   * 产品测试的目的和方法
+    * 产品测试的目的和方法
 * [思维模式](mind-set/README.md)
-   * [思维转变](mind-set/be-a-good-developer.md)
-   * [如何做引导](mind-set/how-to-facilitate.md)
-   * [全局优化](mind-set/focus-on-the-whole.md)
+    * [思维转变](mind-set/be-a-good-developer.md)
+    * [如何做引导](mind-set/how-to-facilitate.md)
+    * [全局优化](mind-set/focus-on-the-whole.md)
 * [基础设施](infrastructure/README.md)
-   * [环境自动化](infrastructure/provision.md)
-   * [容器技术](infrastructure/container.md)
+    * [环境自动化](infrastructure/provision.md)
+    * [容器技术](infrastructure/container.md)
 * [非功能需求](nfr/README.md)
-   * [系统监控](nfr/monitoring.md)
+    * [系统监控](nfr/monitoring.md)
 * [技术选型](tech-stack/README.md)
-   * [技术选型矩阵](tech-stack/details.md)
+    * [技术选型矩阵](tech-stack/details.md)
 * [可演化的软件架构](architecture/README.md)
-   * [软件开发方法论](architecture/methodology.md)
+    * [软件开发方法论](architecture/methodology.md)
 * [工程实践](project-practises/README.md)
-   * [服务器端应用的持续交付](project-practises/poor-man-ci-backend.md)
-   * [客户端程序的的持续交付](project-practises/poor-man-ci-frontend.md)
-   * [Web站点的响应测试](project-practises/web-performance-testing-in-ci.md)
-   * [配置与应用分离](project-practises/externalize-configuration.md)
-   * [推荐的工程实践](project-practises/practises.md)
+    * [服务器端应用的持续交付](project-practises/poor-man-ci-backend.md)
+    * [客户端程序的的持续交付](project-practises/poor-man-ci-frontend.md)
+    * [Web站点的响应测试](project-practises/web-performance-testing-in-ci.md)
+    * [配置与应用分离](project-practises/externalize-configuration.md)
+    * [推荐的工程实践](project-practises/practises.md)
 * [测试策略](testing/README.md)
-   * [前后端分离](testing/frontend-backend-separation.md)
+    * [前后端分离](testing/frontend-backend-separation.md)
 * [附录](appendix/README.md)
-   * [Code Diff的工具](appendix/svn-diff.md)
+    * [Code Diff的工具](appendix/svn-diff.md)
 
