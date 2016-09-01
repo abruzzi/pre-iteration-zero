@@ -10,7 +10,7 @@
     * [问卷调研](user-research/问卷调研.md)
     * [用户画像](user-research/yong_hu_hua_50cf26_ti_yan_di_tu.md)
     * [体验地图](user-research/ti_yan_di_tu.md)
-    * 商业画布
+    * [商业画布](user-research/商业画布.md)
     * 用研产出物在设计中的作用
 * [设计](product-design/README.md)
     * 创意的产生和收敛
