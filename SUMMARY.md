@@ -11,14 +11,14 @@
     * [用户画像](user-research/yong_hu_hua_50cf26_ti_yan_di_tu.md)
     * [体验地图](user-research/ti_yan_di_tu.md)
     * [商业画布](user-research/商业画布.md)
-    * 用研产出物在设计中的作用
+    * [用研产出物在设计中的作用](user-research/用研产出物在设计中的作用.md)
 * [设计](product-design/README.md)
-    * 创意的产生和收敛
-    * 信息架构
-    * 快速原型
-    * 交互原型
-    * 视觉设计
-    * 从设计到开发
+    * [创意的产生和收敛](product-design/创意的产生和收敛.md)
+    * [信息架构](product-design/信息架构.md)
+    * [快速原型](product-design/快速原型.md)
+    * [交互原型](product-design/交互原型.md)
+    * [视觉设计](product-design/视觉设计.md)
+    * [从设计到开发](product-design/从设计到开发.md)
 * [测试](product-testing/README.md)
     * 产品测试的目的和方法
 * [思维模式](mind-set/README.md)
